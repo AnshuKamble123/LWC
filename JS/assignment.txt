@@ -1,0 +1,115 @@
+
+@TechJourneyWithAnkit
+5 months ago
+𝐀𝐬𝐬𝐢𝐠𝐧𝐦𝐞𝐧𝐭
+
+/* 
+We're building a Cricket app !
+
+Suppose we get data from a web service about a certain game (below). 
+In this challenge we're gonna work with the data. So here are your tasks:
+
+1. Create one player array for each team (variables 'players1' and 'players2')
+2. The first player in any player array is the wicketkeeper and the others are field players. 
+For India (team 1) create one variable ('Ind') with the wicketkeeper name, 
+and one array ('fieldPlayers') with all the remaining 10 field players
+3. Create an array 'allPlayers' containing all players of both teams (22 players)
+4. During the game, India (team 1) used 3 substitute players. So create a new array ('players1Final') 
+containing all the original team1 players plus 'Sandeep', 'John' and 'Sunil'
+5. Based on the game.odds object, create one variable for each odd (called 'team1', 'draw' and 'team2')
+6. The team with the lower odd is more likely to win. 
+Print to the console which team is more likely to win, 
+WITHOUT using an if/else statement or the ternary operator.
+7. Loop over the game.Century array and print each player name to the 
+console, along with the Century number (Example: "Century 1: Kohli")
+8. Use a loop to calculate the average odd and log it to the console 
+
+GOOD LUCK 😀
+*/
+const game = {
+  team1: "India",
+  team2: "Australia",
+  players: [
+    [
+      "Dhoni",
+      "Sharma",
+      "Kohli",
+      "Rahul",
+      "Jadeja",
+      "Pandey",
+      "Ashwin",
+      "Chahal",
+      "Khan",
+      "Bhumra",
+      "Shami",
+    ],
+    [
+      "Wade",
+      "Cummins",
+      "Green",
+      "Maxwell",
+      "Finch",
+      "Hazelwood",
+      "Marsh",
+      "Stoinis",
+      "Richardson",
+      "Starc",
+      "Warner",
+    ],
+  ],
+  Century: ["Kohli", "Sharma", "Warner", "Maxwell"],
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
+  },
+};
+
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+/*
+Write a function that takes a string as input and returns a new string with the first letter of each word capitalized.
+
+Example:
+Input: "hello world"
+Output: "Hello World
+
+Problem 2:
+Write a function that takes a string as input and returns the reverse of the string, maintaining the case of each character.
+
+Example:
+Input: "Hello World"
+Output: "dlroW olleH"
+
+Write a function that takes a string as input and returns the number of occurrences of each character in the string as an object.
+
+Example:
+Input: "hello"
+Output: { h: 1, e: 1, l: 2, o: 1 }
+
+Write a function that generate the username of the user based on Firstname, Middlename and Lastname
+Input - ankit Dilipji Jain
+Output - ADJ
+
+Write a function that takes an array of numbers as input and returns a new array with all the even numbers removed.
+
+Example:
+Input: [1, 2, 3, 4, 5, 6]
+Output: [1, 3, 5]
+
+Problem :
+Write a function that takes an array of strings as input and returns a new array with only the strings that have a 
+length greater than or equal to 5.
+
+Example:
+Input: ["apple", "banana", "grape", "orange", "kiwi"]
+Output: ["apple", "banana", "orange"]
+
+Write a function that takes an array of numbers as input and returns a new array with only the unique elements (remove duplicates).
+
+Example:
+Input: [1, 2, 2, 3, 4, 4, 5]
+Output: [1, 2, 3, 4, 5]
+*/
